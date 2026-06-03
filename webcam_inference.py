@@ -4,8 +4,8 @@ import numpy as np
 import os
 from collections import deque, Counter
 from datetime import datetime
-from src.config import MODEL_PATH, SCALER_PATH, CLASSES
-from src.feature_extractor import HandFeatureExtractor
+from config import MODEL_PATH, SCALER_PATH, CLASSES
+from feature_extractor import HandFeatureExtractor
 
 # ─── Stability Settings ───────────────────────────────────────────────────────
 BUFFER_SIZE        = 20    # Number of recent frames to consider for smoothing
@@ -95,7 +95,7 @@ def draw_hand_card(frame, hand_state: HandState, x1, y1, x2, y2):
 
 def main():
     if not os.path.exists(MODEL_PATH) or not os.path.exists(SCALER_PATH):
-        print("Error: Model/scaler not found. Run:\n  /opt/anaconda3/bin/python3 -m src.train")
+        print("Error: Model/scaler not found. Run:\n  /opt/anaconda3/bin/python3 -m train")
         return
 
     print("Loading SVM model and scaler...")

@@ -2,7 +2,7 @@ import os
 import cv2
 import pickle
 import numpy as np
-from src.config import (
+from config import (
     TRAIN_IMAGES_DIR,
     VAL_IMAGES_DIR,
     TRAIN_FEATURES_PATH,
@@ -10,7 +10,7 @@ from src.config import (
     CLASSES,
     CLASS_TO_IDX
 )
-from src.feature_extractor import HandFeatureExtractor
+from feature_extractor import HandFeatureExtractor
 
 def preprocess_dataset_split(split_name, images_dir, output_path):
     print(f"\n--- Preprocessing {split_name.upper()} split ---")

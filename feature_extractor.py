@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 import numpy as np
-from src.config import MIN_DETECTION_CONFIDENCE, MIN_TRACKING_CONFIDENCE
+from config import MIN_DETECTION_CONFIDENCE, MIN_TRACKING_CONFIDENCE
 
 class HandFeatureExtractor:
     def __init__(self, static_image_mode=False, max_num_hands=1):
