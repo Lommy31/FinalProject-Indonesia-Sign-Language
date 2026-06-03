@@ -1,0 +1,3 @@
+# Abaikan folder data dan file pkl
+data/
+*.pkl
