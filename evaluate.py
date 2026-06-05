@@ -4,7 +4,7 @@ import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
-from src.config import (
+from config import (
     VAL_FEATURES_PATH,
     MODEL_PATH,
     SCALER_PATH,
